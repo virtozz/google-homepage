@@ -4,16 +4,65 @@
     padding: 0;
 }
 
-.content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;        
+body {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.form {
-    width: 580px;
+.nav-list {
+    display: flex;
+    list-style-type: none;        
+    justify-content: flex-end;
+    padding: 16px;
+}
+
+.nav-item {    
+    margin-left: 16px;
+}
+
+.tile {
+    background-image: url("./images/i1_1967ca6a.png");
+    background-size: 528px 68px;
+    background-position: -132px -38px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    opacity: 0.55;
+}
+
+.tile:hover {
+    opacity: 1;
+}
+
+.login {    
+    height: 100%;
+    background-color: rgba(67, 151, 219, 0.932);
+    border: 1px solid rgba(75, 169, 247, 0.932);
+    border-radius: 4px;
+    padding: 0 16px;    
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.nav-link {    
+    color: rgba(0, 0, 0, 0.87);    
+    font-size: 13px;
+    line-height: 30px;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto;
+    width: 272px;
 }
 
 .search {
-    width: 100%;
+    display: block;
+    margin: 0 auto;
+    width: 580px;
 }
