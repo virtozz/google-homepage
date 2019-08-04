@@ -56,6 +56,10 @@ body {
     text-decoration: underline;
 }
 
+.content {
+    margin-top: 135px;
+}
+
 .logo {
     display: block;
     margin: 0 auto;
@@ -64,8 +68,31 @@ body {
 
 .search {
     display: block;
-    margin: 0 auto;
+    margin: 35px auto;    
     width: 580px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;    
+}
+
+.button {
+    height: 36px;    
+    margin: 11px 4px;
+    padding: 0 16px;
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #5f6368;
+}
+
+.button:hover {
+    border-color: #c6c6c6;
+    color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 1px 1px #e4e4e4;
 }
 
 .footer {
