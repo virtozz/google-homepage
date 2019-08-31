@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>the odin project - Google search</title>
+  </head>
+  <body>
+    <main>
+      <header class="advanced-header">
+        
+        <form action="#" method="GET" class="searchform">
+          <img
+            src="./images/googlelogo_color_92x30dp.png"
+            alt="Google"
+            class="logo-small"
+          />
+          <input type="text" name="seach" id="search" class="search-advanced" />
+        </form>
+        <div class="right">
+          <div class="tile">
+            <a href="#" class="nav-tile" role="button"></a>
+          </div>
+          <div class="button-container">
+            <button class="login">Login</button>
+          </div>          
+        </div>
+        
+        <div class="search-types">
+          <div class="search-type search-type--active"><a href="#"><span class="search-type-icon"><img src="./images/all.svg" alt=""></span>Все</a></div>
+          <div class="search-type"><a href="#" class="search-type-link"><span class="search-type-icon"><svg viewbox="0 0 24 24"><path d="M14 13l4 5H6l4-4 1.79 1.78L14 13zm-6.01-2.99A2 2 0 0 0 8 6a2 2 0 0 0-.01 4.01zM22 5v14a3 3 0 0 1-3 2.99H5c-1.64 0-3-1.36-3-3V5c0-1.64 1.36-3 3-3h14c1.65 0 3 1.36 3 3zm-2.01 0a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h7v-.01h7a1 1 0 0 0 1-1V5z"></path></svg></span>Картинки</a></div>
+          <div class="search-type"><a href="#" class="search-type-link"><span class="search-type-icon"><svg viewbox="0 0 24 24"><path d="M10 16.5l6-4.5-6-4.5v9zM5 20h14a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1zm14.5 2H5a3 3 0 0 1-3-3V4.4A2.4 2.4 0 0 1 4.4 2h15.2A2.4 2.4 0 0 1 22 4.4v15.1a2.5 2.5 0 0 1-2.5 2.5z"></path></svg></span>Видео</a></div>
+          <div class="search-type"><a href="#" class="search-type-link"><span class="search-type-icon"><svg viewbox="0 0 24 24"><path d="M20.08 15.03l-.08.08v3.87c0 .44-.28.8-.67.93L12.41 13l2.2-2.2c-.36-.58-.71-1.18-1.02-1.81L4 18.58V4.99a1 1 0 0 1 1-1h7.57c.09-.72.29-1.39.58-2H5c-1.64 0-3 1.36-3 3v13.99c0 1.64 1.36 3 3 3h14a3 3 0 0 0 3-2.99v-6.21a27.8 27.8 0 0 1-1.92 2.25zM12 19.99H5.41l5.58-5.58 5.57 5.57H12v.01zM19 0c-3 0-5 1.99-5 4.99 0 3.82 5 9 5 9s5-5.18 5-9c0-3-2-4.99-5-4.99zm0 6.74c-.96 0-1.75-.79-1.75-1.75s.79-1.75 1.75-1.75 1.75.79 1.75 1.75-.79 1.75-1.75 1.75z"></path></svg></span>Карты</a></div>
+          <div class="search-type"><a href="#" class="search-type-link"><span class="search-type-icon"><svg viewbox="0 0 24 24"><path d="M12 11h6v2h-6v-2zm-6 6h12v-2H6v2zm0-4h4V7H6v6zm16-7.22v12.44c0 1.54-1.34 2.78-3 2.78H5c-1.64 0-3-1.25-3-2.78V5.78C2 4.26 3.36 3 5 3h14c1.64 0 3 1.25 3 2.78zM19.99 12V5.78c0-.42-.46-.78-1-.78H5c-.54 0-1 .36-1 .78v12.44c0 .42.46.78 1 .78h14c.54 0 1-.36 1-.78V12zM12 9h6V7h-6v2z"></path></svg></span>Новости</a></div>
+          <div class="search-type"><a href="#" class="search-type-link"><span class="search-type-icon"><svg viewbox="0 0 24 24"><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></svg></span>Еще</a></div>
+          <div class="search-type"><a href="#" class="search-type-link">Настройки</a></div>
+          <div class="search-type"><a href="#" class="search-type-link hover-button">Инструменты</a></div>
+        </div>
+
+      </header>
+
+      <section class="result">
+        <p class="result-total">Результатов: примерно 14 600 000 (0,66 сек.)</p>
+
+        <div class="result-item">
+          <a href="#" class="result-link">
+            <h3 class="result-title">
+              The Odin Project: Your Career in Web Development Starts Here
+            </h3>
+            <div>
+              <p class="result-url">
+                https://www.theodinproject.com/<span class="down-arrow"></span>
+              </p>
+              <a href="#" class="result-translate">Перевести эту страницу</a>
+            </div>
+            <p class="result-description">
+              <strong>The Odin Project</strong> empowers aspiring web developers
+              to learn together.
+            </p>
+          </a>
+        </div>
+
+        <aside class="info">
+          <div class="info-container">
+            <div class="info-header">
+              <div class="info-title">
+                <span>
+                  <svg viewBox="0 0 24 24" class="share-button">
+                    <path
+                      d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z"
+                    ></path>
+                  </svg>
+                </span>
+                <h3>The Odin Project</h3>
+                <p>Компания</p>
+              </div>
+              <div class="info-logo">
+                <img src="./images/index.png" alt="The Odin Project" />
+              </div>
+            </div>
+            <div class="info-body">
+              <p><strong>Дата основания:</strong> <span>2013 г.</span></p>
+              <p>
+                <strong>Головная организация:</strong>
+                <a href="#">Thinkful, Inc.</a>
+              </p>
+              <div class="subheader">Похожие запросы</div>
+              <div class="similar-links">
+                <a href="#" class="similar-links-more">Еще 10+</a>
+                <div class="similar-item">
+                  <a href="#" class="similar-link">
+                    <div class="similar-link-img-wrapper">
+                      <img
+                        src="./images/freeCodeCamp.jpg"
+                        alt="freeCodeCamp"
+                        class="similar-link-img"
+                      />
+                    </div>
+                    <p class="similar-link-title">freeCodecamp</p>
+                  </a>
+                </div>
+                <div class="similar-item">
+                  <a href="#" class="similar-link">
+                    <div class="similar-link-img-wrapper">
+                      <img
+                        src="./images/Codeacademy.png"
+                        alt="Codeacademy"
+                        class="similar-link-img"
+                      />
+                    </div>
+                    <p class="similar-link-title">Codeacademy</p>
+                  </a>
+                </div>
+                <div class="similar-item">
+                  <a href="#" class="similar-link">
+                    <div class="similar-link-img-wrapper">
+                      <img
+                        src="./images/codewars.jpg"
+                        alt="Codewars"
+                        class="similar-link-img"
+                      />
+                    </div>
+                    <p class="similar-link-title">Codewars</p>
+                  </a>
+                </div>
+                <div class="similar-item">
+                  <a href="#" class="similar-link">
+                    <div class="similar-link-img-wrapper">
+                      <img
+                        src="./images/edx.png"
+                        alt="EDx"
+                        class="similar-link-img"
+                      />
+                    </div>
+                    <p class="similar-link-title">edX</p>
+                  </a>
+                </div>
+                <div class="similar-item">
+                  <a href="#" class="similar-link">
+                    <div class="similar-link-img-wrapper">
+                      <img
+                        src="./images/github.png"
+                        alt="GitHub"
+                        class="similar-link-img"
+                      />
+                    </div>
+                    <p class="similar-link-title">GitHub</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+
+        <table class="table">
+          <tbody>
+            <tr>
+              <td>
+                <div class="cell-content">
+                  <a href="#" class="result-link"
+                    ><h3 class="result-title">Courses</h3></a
+                  >
+                  <p class="cell-description">
+                    Web Development 101 - Javascript - Ruby Programming -
+                    Databases
+                  </p>
+                </div>
+              </td>
+              <td>
+                <div class="cell-content">
+                  <a href="#" class="result-link"
+                    ><h3 class="result-title">About</h3></a
+                  >
+                  <p class="cell-description">
+                    The Odin Project is one of those "What I wish I had when I
+                    was...
+                  </p>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="cell-content">
+                  <a href="#" class="result-link"
+                    ><h3 class="result-title">Project Odin</h3></a
+                  >
+                  <p class="cell-description">
+                    The Odin Project empowers aspiring web developers to ...
+                  </p>
+                </div>
+              </td>
+              <td>
+                <div class="cell-content">
+                  <a href="#" class="result-link"
+                    ><h3 class="result-title">FAQ</h3></a
+                  >
+                  <p class="cell-description">
+                    The Odin Project empowers aspiring web developers to ...
+                  </p>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="cell-content">
+                  <a href="#" class="result-link"
+                    ><h3 class="result-title">Web Development 101</h3></a
+                  >
+                  <p class="cell-description">
+                    1. Installation Overview - HTML and CSS Basics - HTML/CSS
+                  </p>
+                </div>
+              </td>
+              <td>
+                <div class="cell-content">
+                  <a href="#" class="result-link"
+                    ><h3 class="result-title">Installation Overview</h3></a
+                  >
+                  <p class="cell-description">
+                    Web Development 101 badge. Web Development 101 ...
+                  </p>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="result-item">
+          <a href="#" class="result-link">
+            <h3 class="result-title">
+              The Odin Project (@TheOdinProject) | Twitter
+            </h3>
+            <div>
+              <p class="result-url">
+                https://twitter.com/theodinproject<span
+                  class="down-arrow"
+                ></span>
+              </p>
+              <a href="#" class="result-translate">Перевести эту страницу</a>
+            </div>
+            <p class="result-description">
+              The latest Tweets from
+              <strong>The Odin Project</strong>
+              (@<strong>TheOdinProject</strong>). An open source online
+              curriculum for learning web development. We help our students
+              learn the ...
+            </p>
+          </a>
+        </div>
+
+        <div class="result-item">
+          <a href="#" class="result-link">
+            <h3 class="result-title">
+              The Odin Project - YouTube
+            </h3>
+            <div>
+              <p class="result-url">
+                https://www.youtube.com/.../UCk0b0VTnJxXbxupXJ4D2yj...
+                <span class="down-arrow"></span>
+              </p>
+              <a href="#" class="result-translate">Перевести эту страницу</a>
+            </div>
+            <p class="result-description">
+              How do you contribute to open source? In this video, I'll describe
+              a model for understanding how Git contributions work and then show
+              you how you can make ...
+            </p>
+          </a>
+        </div>
+
+        <div class="result-item">
+          <a href="#" class="result-link">
+            <h3 class="result-title">
+              The Odin Project · GitHub
+            </h3>
+            <div>
+              <p class="result-url">
+                https://github.com/TheOdinProject
+                <span class="down-arrow"></span>
+              </p>
+              <a href="#" class="result-translate">Перевести эту страницу</a>
+            </div>
+            <p class="result-description">
+              <strong>The Odin Project</strong> has 10 repositories available.
+              Follow their code on GitHub.
+            </p>
+          </a>
+        </div>
+
+        <div class="result-item">
+          <a href="#" class="result-link">
+            <h3 class="result-title">
+              Anyone have any experience learning with The Odin Project ...
+            </h3>
+            <div>
+              <p class="result-url">
+                https://www.reddit.com/.../anyone_have_any_experience_lea...
+                <span class="down-arrow"></span>
+              </p>
+              <a href="#" class="result-translate">Перевести эту страницу</a>
+            </div>
+            <p class="result-description">
+              I've heard <strong>the odin project</strong> mentioned on here and
+              other forums a few times and wondered if anyone, professional or
+              beginner, could advise on ...
+            </p>
+          </a>
+        </div>
+
+        <div class="result-item">
+          <a href="#" class="result-link">
+            <h3 class="result-title">
+              Can't recommend The Odin Project enough : learnprogramming -
+              Reddit
+            </h3>
+            <div>
+              <p class="result-url">
+                https://www.reddit.com/.../cant_recommend_the_odin_proje...
+                <span class="down-arrow"></span>
+              </p>
+              <a href="#" class="result-translate">Перевести эту страницу</a>
+            </div>
+            <p class="result-description">
+              8 янв. 2019 г. - <strong>The Odin Project</strong> makes you set
+              up an actual environment on your computer where you learn how to
+              actually write code. All the learning and ...
+            </p>
+          </a>
+        </div>
+        <div class="extra-resources">
+          <h3 class="extra-header">Вместе с the odin project часто ищут</h3>
+          <div class="extra-resources__links">
+            <div class="extra-resources__col">
+              <a href="#" class="extra-resources__link"
+                >the odin project <b>javascript</b></a
+              >
+              <a href="#" class="extra-resources__link"
+                ><b>web development projects</b></a
+              >
+              <a href="#" class="extra-resources__link"
+                ><b>ruby projects for learning</b></a
+              >
+              <a href="#" class="extra-resources__link"
+                ><b>ruby on rails projects</b></a
+              >
+            </div>
+            <div class="extra-resources__col">
+              <a href="#" class="extra-resources__link"
+                ><b>dash general assembly projects</b></a
+              >
+              <a href="#" class="extra-resources__link"
+                ><b>web development basics</b></a
+              >
+              <a href="#" class="extra-resources__link"><b>free coding</b></a>
+              <a href="#" class="extra-resources__link"
+                ><b>dash создание веб сайтов</b></a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="foot">
+          <table>
+            <tbody>
+              <tr>
+                <td><span class="G"></span></td>
+                <td><span class="o-red"></span>1</td>
+                <td><a href="#"><span class="o-yellow"></span>2</a></td>
+                <td><a href="#"><span class="o-yellow"></span>3</a></td>
+                <td><a href="#"><span class="o-yellow"></span>4</a></td>
+                <td><a href="#"><span class="o-yellow"></span>5</a></td>
+                <td><a href="#"><span class="o-yellow"></span>6</a></td>
+                <td><a href="#"><span class="o-yellow"></span>7</a></td>
+                <td><a href="#"><span class="o-yellow"></span>8</a></td>
+                <td><a href="#"><span class="o-yellow"></span>9</a></td>
+                <td><a href="#"><span class="o-yellow"></span>10</a></td>
+                <td>
+                  <a href="#">
+                  <span class="gle"></span>
+                  <span class="gle-text">Следующие</span>
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer-line">
+          <p class="country">Россия</p>
+        </div>
+        <div class="footer-line">
+          <div class="left-info">
+            <a href="#" class="link link-left">Реклама</a>
+            <a href="#" class="link link-left">Для бизнеса</a>
+            <a href="#" class="link link-left">Все о Google</a>
+            <a href="#" class="link link-left">Как работает Google поиск</a>
+          </div>
+          <div class="right-info">
+            <a href="#" class="link link-right">Конфидициальность</a>
+            <a href="#" class="link link-right">Условия</a>
+            <a href="#" class="link link-right">Настройки</a>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
